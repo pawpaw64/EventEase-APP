@@ -1,0 +1,2 @@
+dotnet new sln -n EventEaseApp
+dotnet sln EventEaseApp.sln add EventEaseApp/EventEaseApp.csproj
