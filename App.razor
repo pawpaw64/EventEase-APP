@@ -1,0 +1,15 @@
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Routing
+@using EventEaseApp
+@using EventEaseApp.Components
+
+<CascadingValue Value="this">
+    <Router AppAssembly="@typeof(App).Assembly">
+        <RouteView RouteData="@routeData" DefaultLayout="typeof(MainLayout)" />
+        <RouteView RouteData="@routeData" DefaultLayout="typeof(MainLayout)" />
+    </Router>
+</CascadingValue>
+
+@code {
+    private RouteData routeData;
+}
